@@ -1,0 +1,37 @@
+#input_cadastro{
+  padding: 14px 5px;
+}
+
+#input_cadastro-descricao{
+  padding: 25px 5px;
+}
+
+#rodape_cadastro{
+    margin-top: 0;
+}
+
+#cabecalho_cadastro{
+    height: 110px;
+}
+
+#sessao_cadastro{
+  height: 650px;
+}
+
+
+
+
+@media screen and (max-width: 742px) {
+  .pesquisar{
+    display: none;
+
+  }
+
+  #caixa_pesquisa{
+    display: none;
+  }
+
+  #botao_cadastro{
+    margin: 0 15px ;
+  }
+}

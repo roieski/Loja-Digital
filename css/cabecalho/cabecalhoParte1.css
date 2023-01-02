@@ -1,0 +1,83 @@
+.cabecalhos_parte1 {
+ 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+
+.nav_cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+
+}
+
+/*letras titulo*/
+
+.titulo_cabecalho {
+    font-weight: 700;
+}
+
+#um {
+    color: var(--texto_azul);
+
+}
+
+#dois {
+    color: var(--texto_preto);
+}
+
+
+/* input */
+
+.pesquisar {
+    align-items: center;
+    width: 393px;
+    height: 40px;
+    background-color: var(--input_pesquisa);
+    justify-content: center;
+    margin: 0 1rem;
+    border-radius: 40px;
+}
+
+#caixa_pesquisa {
+    width: 310px;
+    padding: 8px 16px;
+    border: none;
+    background-color: var(--input_pesquisa);
+    font-size: 14px;
+    color: var(--texto_input);
+    font-weight: 300;
+
+
+}
+
+.imagem_pesquisa {
+    cursor: pointer;
+    background-color: var(--input_pesquisa);
+
+}
+
+/*botão*/
+.botao_cabecalho {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--texto_azul);
+    line-height: 19px;
+    font-style: normal;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+
+    background-color: var(--cor_fundo);
+    border: 1px solid var(--texto_azul)
+}

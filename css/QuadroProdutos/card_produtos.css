@@ -1,0 +1,44 @@
+.card_produto {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    margin-right: 1rem;
+    width: 172px;
+    height: 252px;
+}
+
+.imagem_card {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 172px;
+    height: 174px;
+
+}
+
+.texto_card {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--texto_preto);
+}
+
+.valor_card {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--preto);
+}
+
+.link_card {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--texto_azul);
+    text-decoration: none;
+}

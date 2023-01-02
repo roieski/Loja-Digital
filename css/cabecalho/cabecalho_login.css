@@ -1,0 +1,30 @@
+.login_cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 114px;
+}
+
+.cabecalhos_login {
+    display: flex;
+    flex-direction: row;
+
+
+    align-items: center;
+    width: 100%;
+    padding: 3% 10%
+}
+
+@media screen and (max-width: 611px) {
+
+    #caixa_pesquisa {
+        display: none;
+      
+    }
+
+    .pesquisar {
+        display: none;
+    }
+
+}

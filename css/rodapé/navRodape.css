@@ -1,0 +1,16 @@
+.nav_rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 234px;
+
+}
+
+.link_rodape {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--texto_preto);
+    text-decoration: none;
+}

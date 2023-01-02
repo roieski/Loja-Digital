@@ -1,0 +1,89 @@
+.rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+
+    height: 318px;
+    width: 100%;
+    background-color: var(--fundo_Rodapé);
+    margin-top: 3rem;
+}
+
+.conteudo_rodape {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 86%;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 956px) {
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .conteudo_rodape {
+        flex-direction: column;
+        justify-content: start;
+
+    }
+
+    .nav_rodape {
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+
+    }
+
+    .nav_cabecalho {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        margin: 2rem auto;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .nav_rodape {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 572px) {
+    .nav_rodape {
+        flex-direction: column;
+        margin: 5px auto;
+        height: auto;
+        align-items: center;
+    }
+    
+    .link_rodape{
+        line-height: 30px;
+    }
+
+    .contato {
+        margin: 0 auto;
+    }
+
+    .botao_contato{
+        margin: 1rem auto;
+    }
+}
+

@@ -1,0 +1,14 @@
+.rodape_descricao{
+    background: var(--cor_fundo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+.descricao__rodape {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--texto_preto);
+}
