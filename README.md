@@ -14,4 +14,4 @@ Desafio criar um e-commerce _  Sprint 3 _ Front-End _ programa ONE - turma3
 - Um rodapé com formulário para contato e outras informações relevantes.<br><br>
 - Menu administrador para eles conseguirem adicionar, editar, buscar ou eliminar produtos da loja.<br><br>
 
- <img src="./imagens/ProjetoConcluido" alt="Projeto Final">
+ ![ProjetoConcluido](https://user-images.githubusercontent.com/114116082/211158976-301ab29f-a30c-4819-ba77-7d0cfcdc7699.png)
