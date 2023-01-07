@@ -39,14 +39,15 @@
             </div>
 
     </header>
-    <main class="sessao_login">
-        <section class="sessao">
-            <h1 class="titulo_login">Iniciar Sessão</h1>
-            <input type="text" class="input_login" placeholder="Nome"></input>
-            <input type="text" class="input_login" placeholder="Escreva sua Senha"> </input>
-            <button class="botao_input">Entrar</button>
-        </section>
-
+    <main>
+        <form action="#" class="sessao_login" data-form>
+            <section class="sessao">
+                <h1 class="titulo_login">Iniciar Sessão</h1>
+                <input type="email" class="input_login" placeholder="email" required data-email></input>
+                <input type="password" class="input_login" placeholder="Escreva sua Senha" required data-password></input>
+                <button type="submit" class="botao_input">Entrar</button>
+            </section>
+        </form>
     </main>
     <footer>
         <section class="rodape">
@@ -89,7 +90,7 @@
 
     </footer>
 
-
+    <script type="module" src="./controllers/login.js"></script>
 </body>
 
 </html>

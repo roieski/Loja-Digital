@@ -21,6 +21,7 @@
     <link href="./css/rodapé/rodape.css" rel="stylesheet" />
     <link href="./css/sessaoLogin/sessao_login.css" rel="stylesheet" />
     <link href="./css/Cadastro/cadastro.css" rel="stylesheet" />
+    <link href="./css/PagProdutos/pag_produtos.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -42,12 +43,20 @@
     <main class="sessao_login" id="sessao_cadastro">
         <section class="sessao">
             <h1 class="titulo_login">Iniciar Sessão</h1>
-            <input id="input_cadastro" type="text" class="input_login" placeholder="URL de imagem"></input>
-            <input id="input_cadastro" type="text" class="input_login" placeholder="Categoria"> </input>
-            <input id="input_cadastro" type="text" class="input_login" placeholder="Nome do Produto"> </input>
-            <input id="input_cadastro" type="text" class="input_login" placeholder="Preço do produto"> </input>
-            <input id="input_cadastro-descricao" type="text" class="input_login" placeholder="Decrição do produto"> </input>
-            <button class="botao_input">Cadastrar</button>
+            <form class="sessao" data-form>
+                <input required data-imagem id="input_cadastro" type="text" class="input_login"
+                    placeholder="URL de imagem"></input>
+                <input data-categoria id="input_cadastro" type="text" class="input_login" placeholder="Categoria" required>
+                </input>
+                <input data-nome id="input_cadastro" type="text" class="input_login" placeholder="Nome do Produto" required>
+                </input>
+                <input data-preco id="input_cadastro" type="text" class="input_login" placeholder="Preço do produto" required>
+                </input>
+                <input data-descricao id="input_cadastro-descricao" type="text" class="input_login"
+                    placeholder="Decrição do produto"> </input>
+                <button type="submit" class="botao_input">Cadastrar</button>
+            </form>
+
         </section>
     </main>
     <footer>
@@ -69,15 +78,13 @@
 
                 <section class="contato">
                     <h1 class="titulo_contato">Fale conosco</h1>
-                    <div class="input_contato">
+                    <form data-contato class="input_contato">
                         <p class="texto_input">Nome</p>
-                        <input type="text" class="input_rodape1">
-                    </div>
-                    <div class="input_contato">
+                        <input data-fale type="text" class="input_rodape1" required>
                         <p class="texto_input">Escreva sua mensagem</p>
-                        <input type="text" class="input_rodape2">
-                    </div>
-                    <button class="botao_contato">Enviar mensagem</button>
+                        <input data-mensagem type="text" class="input_rodape2" required>
+                        <button  type="submit"  class="botao_contato">Enviar mensagem</button>
+                    </form>
                 </section>
             </section>
         </section>
@@ -92,5 +99,7 @@
     </footer>
 
 </body>
+<script type="module" src="./controllers/Contato.js"></script>
+<script type="module" src="./controllers/cria-produtos.js"></script>
 
 </html>

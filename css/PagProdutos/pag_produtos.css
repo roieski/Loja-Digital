@@ -1,9 +1,9 @@
-.nav_pag-produto{
+.nav_pag-produto {
     background-color: var(--input_pesquisa);
-    height: 850px;
+    height: 950px;
 }
 
-.botao_produtos{
+.botao_produtos {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -15,21 +15,42 @@
     margin-top: 1rem;
     color: var(--cor_fundo);
     cursor: pointer;
-    margin:1rem 0;
+    margin: 1rem 0;
 }
 
-.quadro_produto{
+.quadro_produto {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
 
-#rodape_margin{
+#rodape_margin {
     margin-top: 0;
 }
 
-#itens_produtos-pag{
+#itens_produtos-pag {
     flex-wrap: wrap;
+}
+
+/* estilo botoes deleta e edita */
+
+.container {
+    position: relative;
+    display: flex;
+    background-color: blue;
+    width: 172px;
+}
+
+.buttonDelete,
+.buttonEdit {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.editImage,
+.deleteImage {
+    width: 24px;
+    height: 24px;
 }
 
 @media screen and (max-width: 1373px) {
@@ -68,5 +89,3 @@
         height: 850vh;
     }
 }
-
-

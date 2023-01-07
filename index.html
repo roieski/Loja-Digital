@@ -34,12 +34,19 @@
                 <h1 class="titulo_cabecalho" id="um">Alura</h1>
                 <h1 class="titulo_cabecalho" id="dois">Geek</h1>
                 <form class="pesquisar">
-                    <input type="search" id="caixa_pesquisa" placeholder="O que deseja encontar?">
+                    <input list="historico" type="search" id="caixa_pesquisa" placeholder="O que deseja encontar?">
                     <img src="./imagens/logo_lupa.png" class="imagem_pesquisa">
+
+                    <datalist id="historico">
+                        <option value="Star Wars"></option>
+                        <option value="Consoles"></option>
+                        <option value="Diversos"></option>
+                        <option value="Boneco Star Wars"></option>
+                    </datalist>
                 </form>
 
             </div>
-            <button class="botao_cabecalho"> Login </button>
+            <button id="botao-login-js" class="botao_cabecalho"> Login Administrador </button>
 
 
         </section>
@@ -47,7 +54,7 @@
             <div class="promocao">
                 <h1 class="titulo_parte2">Dezembro Promocional</h1>
                 <p class="paragrafo_parte2">Produtos selecionados com 33% de Desconto </p>
-                <button class="botao_parte2">Ver consoles </button>
+                <button id="botao-todosProdutos-js" class="botao_parte2">Ver consoles </button>
             </div>
 
 
@@ -59,12 +66,12 @@
             <div class="produtos">
                 <h1 class="tiulo_produtos">Star Wars</h1>
                 <li class="link">
-                    <a href="#" class="link_titulo"> Ver Tudo</a>
+                    <a href="./produtos.html" class="link_titulo"> Ver Tudo</a>
                     <img src="./imagens/flechas.png" class="imagem_link">
                 </li>
 
             </div>
-            <ul class="itens_produtos">
+            <section class="itens_produtos" data-produtos>
                 <li class="card_produto">
                     <img src="./imagens/produto_1.png" alt="imagem Xicara" class="imagem_card">
                     <p class="texto_card">Produto XYZ</p>
@@ -108,7 +115,7 @@
                 </li>
 
 
-            </ul>
+            </section>
 
 
         </section>
@@ -116,13 +123,13 @@
             <div class="produtos">
                 <h1 class="tiulo_produtos">consoles</h1>
                 <div class="link">
-                    <a href="#" class="link_titulo"> Ver Tudo</a>
+                    <a href="./produtos.html"  class="link_titulo"> Ver Tudo</a>
                     <img src="./imagens/flechas.png" class="imagem_link">
                 </div>
 
             </div>
-            <ul class="itens_produtos">
-                <li class="card_produto">
+            <section class="itens_produtos" data-produtos>
+                 <li class="card_produto">
                     <img src="./imagens/consoles_1.png" alt="imagem Xicara" class="imagem_card">
                     <p class="texto_card">Produto XYZ</p>
                     <p class="valor_card">R$ 60,00 </p>
@@ -165,7 +172,7 @@
                 </li>
 
 
-            </ul>
+            </section>
 
 
         </section>
@@ -173,13 +180,13 @@
             <div class="produtos">
                 <h1 class="tiulo_produtos">Diversos</h1>
                 <div class="link">
-                    <a href="#" class="link_titulo"> Ver Tudo</a>
+                    <a href="./produtos.html"  class="link_titulo"> Ver Tudo</a>
                     <img src="./imagens/flechas.png" class="imagem_link">
                 </div>
 
             </div>
-            <ul class="itens_produtos">
-                <li class="card_produto">
+            <section class="itens_produtos" data-produtos>
+                 <li class="card_produto">
                     <img src="./imagens/diversos_1.png" alt="imagem Xicara" class="imagem_card">
                     <p class="texto_card">Produto XYZ</p>
                     <p class="valor_card">R$ 60,00 </p>
@@ -222,7 +229,7 @@
                 </li>
 
 
-            </ul>
+            </section>
 
 
         </section>
@@ -245,16 +252,15 @@
                 </ul>
 
                 <section class="contato">
-                    <h1 class="titulo_contato">Fale conosco</h1>
-                    <div class="input_contato">
+                    <h1  class="titulo_contato">Fale conosco</h1>
+                    <form data-contato class="input_contato">
                         <p class="texto_input">Nome</p>
-                        <input type="text" class="input_rodape1">
-                    </div>
-                    <div class="input_contato">
+                        <input data-fale type="text" class="input_rodape1" required>
                         <p class="texto_input">Escreva sua mensagem</p>
-                        <input type="text" class="input_rodape2">
-                    </div>
-                    <button class="botao_contato">Enviar mensagem</button>
+                        <input data-mensagem type="text" class="input_rodape2" required>
+                        <button  type="submit"  class="botao_contato">Enviar mensagem</button>
+                    </form>
+        
                 </section>
             </section>
         </section>
@@ -267,8 +273,9 @@
 
 
     </footer>
-
-
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./controllers/Contato.js"></script>
+    <!--<script type="module" src="./controllers/produtos-controllers.js"></script>-->
 
 </body>
 
